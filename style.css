@@ -1,0 +1,779 @@
+@font-face {
+    font-family: "DIN 200";
+    src: url(./DINRoundPro.ttf);
+}
+
+@font-face {
+    font-family: "DIN 400";
+    src: url(./DINRoundPro-Medi.ttf);
+}
+
+@font-face {
+    font-family: "DIN 700";
+    src: url(./DINRoundPro-Bold.ttf);
+}
+
+* {
+    font-family: "DIN 400";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141F23;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #202F36;
+    border-bottom: 2px solid #141F23;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+header .nav-item .spain {
+    height: 25px;
+}
+
+.nav-item {
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.nav-item img {
+    margin-right: 8px;
+    height: 22px;
+}
+
+.nav-item .heart {
+    height: 20px;
+}
+
+
+main {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+main .unit-header {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    background-color: #202F36;
+}
+
+main .unit-header img {
+    height: 50px;
+}
+
+main .path {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 200px;
+}
+
+main .path .lesson {
+    transition: .2s ease;
+    border: none;
+    position: relative;
+    background-color: #38464f;
+    width: 70px;
+    height: 57px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    pointer-events: none;
+}
+
+main .path .lesson.unlock {
+    pointer-events: all;
+    background-color: #FF4B4B;
+}
+
+main .path .lesson:active {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+main .path .lesson::after {
+    transition: .2s ease;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    background-color: #2b3840;
+    width: 70px;
+    height: 57px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .path .lesson.unlock::after {
+    background-color: #CC3C3C;
+}
+
+main .path .lesson.unlock svg {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .path .lesson svg {
+    display: none;
+    pointer-events: none;
+}
+
+main .path .lesson.done {
+    background-color: #FFC800;
+}
+main .path .lesson.done::after {
+    background-color: #E6A100;
+}
+
+main .path .lesson.unlock.l-8 {
+    background-color: transparent;
+    top: 20px;
+}
+
+main .path .lesson.unlock.l-8::after {
+    background-color: transparent;
+}
+
+main .path .lesson.done svg.done {
+    display: block;
+}
+
+main .path .lesson.done svg.undone {
+    display: none;
+}
+
+main .path .lesson svg.done {
+    display: none;
+}
+
+
+main .path .lesson.unlock img {
+    display: none;
+}
+
+main .path .lesson:active::after {
+    bottom: 0px;
+}
+
+main .path .chest-img {
+    width: 80px;
+    height: 90px;
+    object-fit: contain;
+    object-position: center;
+}
+
+main .path .lesson .popup {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: -50px;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid #202F36;
+    background-color: #141F23;
+    color: #FF4B4B;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hover 4s ease infinite;
+}
+
+main .path .lesson .popup::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%) rotate(-45deg);
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid #202F36;
+    border-left: 2px solid #202F36;
+    background-color: #141F23;
+    border-radius: 3px;
+}
+
+main .path .l-1 {left: 45px;}
+main .path .l-1 .start-popup {transform: translate(-45px);}
+
+main .path .l-2 {left: 70px;}
+main .path .l-2 .start-popup {transform: translate(-70px);}
+
+main .path .l-3 {
+    left: 45px;
+}
+main .path .l-3 .start-popup {transform: translate(-45px);}
+
+main .path .l-5 {
+    left: -45px;
+}
+main .path .l-5 .start-popup {transform: translate(45px);}
+
+main .path .l-6 {
+    left: -70px;
+}
+main .path .l-6 .start-popup {transform: translate(70px);}
+
+main .path .l-7 {
+    left: -45px;
+}
+main .path .l-7 .start-popup {transform: translate(45px);}
+
+main .char-2 {
+    position: absolute;
+    left: 25%; 
+    transform: translate(-50%) !important;
+    width: 156px !important;
+    top: 200px;
+    height: 300px !important;
+}
+
+main .char-1 {
+    position: absolute;
+    right: 25%; 
+    transform: translate(50%) !important;
+    width: 156px !important;
+    top: 500px;
+    height: 300px !important;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    width: 100%;
+}
+
+@keyframes hover {
+    0% { top: -60px; }
+    50% { top: -45px;  }
+    100% { top: -60px; }
+}
+
+
+
+main .path .lesson .arrow {
+    position: absolute;
+    top: 80px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    background-color: #FF4B4B;
+    z-index: 10;
+    border-radius: 2px;
+}
+
+main .path .lesson .start-popup {
+    position: absolute;
+    top: 85px;
+    width: 300px;
+    background-color: #FF4B4B;
+    padding: 15px;
+    z-index: 10;
+    border-radius: 15px;
+}
+
+main .path .lesson .start-popup h1 {
+    text-align: left;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+main .path .lesson .start-popup button {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF4B4B;
+    position: relative;
+    transition: .2s ease;
+}
+
+main .path .lesson .start-popup button:active {
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+main .path .lesson .start-popup button::after {
+    content: "";
+    left: 0;
+    bottom: -5px;
+    z-index: -1;
+    position: absolute;
+    width: 270px;
+    background-color: #fff;
+    opacity: 50%;
+    padding: 15px 0;
+    border-radius: 15px;
+    transition: .2s ease;
+}
+main .path .lesson .start-popup button:active::after {
+    bottom: 0;
+}
+
+body .loading-screen {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #141F23;
+}
+body .loading-screen div {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Screenshot_20221215_200359_Duolingo[744].jpg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    animation: fade-in .5s ease forwards;
+}
+
+@keyframes fade-in {
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100%{ opacity: 0; }
+}
+
+body .oefening {
+    position: fixed;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100vh);
+    background-color: #141F23;
+    animation: full-height .2s ease forwards;
+    overflow: hidden;
+}
+
+.oefening .nav-item {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@keyframes full-height {
+    100% { transform: translate(0); }
+}
+
+body .oefening .top-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body .oefening .top-bar .close {
+    width: 60px;
+    height: 60px;
+    color: #38464f;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .oefening .top-bar .progress {
+    margin-top: 3px;
+    width: calc( 100% - 140px );
+    height: 16px;
+    background-color: #38464f;
+    display: flex;
+    border-radius: 10px;
+}
+
+body .oefening .top-bar .progress div {
+    width: 90px;
+    height: 16px;
+    background-color: #58CC02;
+    border-radius: 10px;
+    position: relative;
+}
+
+body .oefening .top-bar .progress div div {
+    width: calc( 100% - 20px );
+    height: 8px;
+    bottom: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #79D635;
+    border-radius: 10px;
+}
+
+body .oefening h3 {
+    margin-top: -5px;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    padding-left: 20px;
+}
+
+body .oefening .hearts {
+    padding-left: 8px;
+    color: #FF4B4B;
+    font-size: 18px;
+}
+
+body .oefening .hearts img {
+    height: 22px;
+}
+
+body .oefening .check {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(100vw - 40px);
+    background-color: #58CC02;
+    color: #141F23;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom .2s ease;
+}
+
+body .oefening .annu {
+    position: absolute;
+    bottom: 85px;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(100vw - 40px);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom .2s ease;
+}
+body .oefening .check.incorrect {
+    background-color: #FF4B4B;
+}
+
+body .oefening .check-back.incorrect {
+    background-color: #CC3C3C;
+}
+
+body .oefening .check:active {
+    bottom: 20px;
+}
+
+body .oefening .check-back {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc( 100vw - 40px ) ;
+    background-color: #60AC0B;
+    padding: 20px 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+textarea {
+    position: fixed;
+    width: calc(100vw - 40px);
+    left: 20px;
+    bottom: 85px;
+    height: calc( 100vh - 361px );
+    background-color: #202F36;
+    border: 3px solid #38464f;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    padding: 15px;
+    z-index: -3;
+}
+textarea::placeholder {
+    color: #ffffff30;
+}
+
+.tips {
+    position: absolute;
+    right: 25px;
+    bottom: 90px;
+    width: 50px;
+    z-index: -2;
+}
+
+.question {
+    padding: 0 20px;
+    height: 198px;
+    display: flex;
+}
+.question img {
+    height: 100%;
+}
+
+.question .quest {
+    color: #fff;
+    margin-left: 10px;
+    border: 3px solid #38464f;
+    padding: 10px;
+    border-radius: 15px;
+    height: fit-content;
+    align-self: center;
+    font-weight: 400;
+    position: relative;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #748896;
+    text-underline-offset: 2px;
+}
+
+.question .quest.q7 {
+    text-decoration: none;
+    word-spacing: 7px;
+    width: 100%;
+}
+
+.question img.q7 {
+    display: none;
+}
+
+.question .quest.q7 span {
+    word-spacing: 0px;
+}
+
+.question .quest.q7 hr{
+    margin: 1px 0;
+}
+
+.question .quest:hover > span.quest {
+    display: block;
+}
+
+.question span.quest {
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    background-color: #abbbc7;
+    text-decoration: none;
+    transform: translate(-50%);
+    width: 100%;
+    text-align: center;
+    color: #141F23;
+    border-color: #536571;
+}
+
+.question .quest::after {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 20px;
+    background-color: #141F23;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid #38464f;
+    border-bottom: 3px solid #38464f;
+    transform: rotate(45deg);
+}
+
+.question span.quest::after {
+    left: 50px;
+    top: -9px;
+    background-color: #abbbc7;
+    transform: rotate(135deg);
+    border-color: #536571;
+
+}
+
+.oefening .answer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    height: 190px;
+    background-color: #202F36;
+    z-index: -2;
+    padding: 20px;
+    color: #FF4B4B
+}
+
+.oefening .answer.correct {
+    height: 140px;
+    color: #58CC02;
+}
+
+.answer .wrong-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FF4B4B;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answer .correct-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #58CC02;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answer .wrong-icon img {
+    width: 12px;
+    height: 12px;
+}
+.answer .correct-icon img {
+    width: 14px;
+    height: 14px;
+}
+
+.answer .flex {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.answer h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.answer p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.check.empty {
+    pointer-events: none;
+    background-color: #536571 !important;
+    color: #748896 !important;
+} 
+
+.check-back.empty {
+    display: none;
+}
+
+.reward {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 50px;
+}
+
+.reward img {
+    width: 55vw;
+}
+
+.reward h1.blue {
+    color: #6BBEF2;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.reward h3 {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px !important;
+    margin-top: 10px !important;
+    font-size: 20px !important;
+}
+.reward p {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.reward span {
+    color: #F5BF3D;
+}
+
+.reward.klaar h1.streak {
+    color: #F5BF3D;
+    font-size: 28px;
+}
+
+.reward.klaar h1.blue {
+    color: #F5BF3D;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body .reward.klaar h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px !important;
+    line-height: 1.5;
+}
+
+.check.blue {
+    pointer-events: all;
+    background-color: #6BBEF2 !important;
+}
+.check-back.blue {
+    background-color: #4696CD !important;
+}

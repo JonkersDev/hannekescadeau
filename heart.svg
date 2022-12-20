@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="15.058673mm"
+   height="11.957004mm"
+   viewBox="0 0 15.058673 11.957004"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="heart.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="11.374411"
+     inkscape:cx="21.847286"
+     inkscape:cy="30.990616"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8577" />
+  <defs
+     id="defs2">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-86.939656,-124.30747)">
+    <g
+       id="g8577"
+       transform="matrix(0.33270806,0,0,0.33270806,51.376111,86.527265)">
+      <path
+         style="fill:#ff4b4c;fill-opacity:1;stroke:#ffffff;stroke-width:3.00563804;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 127.9434,147.41899 c -1.28868,-0.56397 -16.03792,-13.04836 -17.12542,-14.4957 -4.31378,-5.74109 -1.50802,-14.18409 5.62208,-16.91783 3.84889,-1.47569 9.12245,-0.62917 12.29389,1.97344 l 0.79056,0.64876 0.96477,-0.76411 c 2.31149,-1.83073 5.51648,-2.76943 8.69891,-2.5478 7.62744,0.5312 12.74025,7.56636 10.58054,14.55869 -0.31241,1.01148 -0.99488,2.33117 -1.65364,3.19766 -1.30253,1.71325 -15.2295,13.81788 -16.51717,14.3559 -1.07426,0.44885 -2.617,0.44505 -3.65452,-0.009 z"
+         id="path2843" />
+      <ellipse
+         style="fill:#ff9292;fill-opacity:1;stroke:none;stroke-width:0.0560427;stroke-linecap:round;stroke-linejoin:round"
+         id="path858"
+         cx="120.24623"
+         cy="126.82848"
+         rx="4.8285384"
+         ry="4.9763503" />
+    </g>
+  </g>
+</svg>

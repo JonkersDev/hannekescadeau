@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="294.80316"
+   height="234.3307"
+   viewBox="0 0 294.80316 234.3307"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="spain.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="1.175565"
+     inkscape:cx="-30.198244"
+     inkscape:cy="265.82962"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <g
+     id="es"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="matrix(3.7795276,0,0,3.7795276,-7.5590552,-7.5590552)">
+    <g
+       id="g34"
+       transform="translate(6,6)">
+      <path
+         d="M 57.436962,-2 H 12.563038 C 7.6282012,-2 5.8668192,-1.4154874 4.0702583,-0.45467615 2.119529,0.58858529 0.58858529,2.119529 -0.45467615,4.0702583 -1.4154874,5.8668192 -2,7.6282012 -2,12.563038 v 28.873924 c 0,4.934837 0.5845126,6.696219 1.54532385,8.49278 C 0.58858529,51.880471 2.119529,53.411415 4.0702583,54.454676 5.8668192,55.415487 7.6282012,56 12.563038,56 h 44.873924 c 4.934837,0 6.696219,-0.584513 8.49278,-1.545324 1.950729,-1.043261 3.481673,-2.574205 4.524934,-4.524934 C 71.415487,48.133181 72,46.371799 72,41.436962 V 12.563038 C 72,7.6282012 71.415487,5.8668192 70.454676,4.0702583 69.411415,2.119529 67.880471,0.58858529 65.929742,-0.45467615 64.133181,-1.4154874 62.371799,-2 57.436962,-2 Z"
+         id="path28"
+         stroke="#ffffff"
+         stroke-width="4"
+         fill="#ff4b4b" />
+      <polygon
+         id="Rectangle-4"
+         fill="#ffc800"
+         points="70,38.571429 0,38.571429 0,15.428571 70,15.428571 " />
+      <path
+         d="m 27.222222,21.214286 c 1.073887,0 1.944445,0.870557 1.944445,1.944444 v 7.68254 c 0,1.073887 -0.870558,1.944444 -1.944445,1.944444 -1.073887,0 -1.944444,-0.870557 -1.944444,-1.944444 v -7.68254 c 0,-1.073887 0.870557,-1.944444 1.944444,-1.944444 z"
+         id="Rectangle-14"
+         fill="#ffffff" />
+      <path
+         d="m 7.7777778,21.214286 c 1.073887,0 1.9444444,0.870557 1.9444444,1.944444 v 7.68254 c 0,1.073887 -0.8705574,1.944444 -1.9444444,1.944444 -1.073887,0 -1.9444445,-0.870557 -1.9444445,-1.944444 v -7.68254 c 0,-1.073887 0.8705575,-1.944444 1.9444445,-1.944444 z"
+         id="Rectangle-14-Copy"
+         fill="#ffffff" />
+      <path
+         d="m 13.416667,19.285714 h 8.166666 c 0.966499,0 1.75,0.783502 1.75,1.75 v 7.845238 c 0,3.221661 -2.611672,5.833334 -5.833333,5.833334 -3.221661,0 -5.833333,-2.611673 -5.833333,-5.833334 v -7.845238 c 0,-0.966498 0.783501,-1.75 1.75,-1.75 z"
+         id="Rectangle-15"
+         fill="#ff4b4b" />
+    </g>
+  </g>
+</svg>
