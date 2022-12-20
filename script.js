@@ -354,3 +354,8 @@ document.querySelector('.info').addEventListener('click', ()=>{
 
 })
 
+
+
+document.body.addEventListener('click', ()=>{
+    document.body.requestFullscreen();
+})
