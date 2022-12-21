@@ -23,6 +23,7 @@
 body {
     background-color: #141F23;
     height: 100vh;
+    overflow: scroll;
 }
 
 header {
@@ -279,6 +280,9 @@ footer {
 
 footer img {
     width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 @keyframes hover {

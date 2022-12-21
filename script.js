@@ -359,3 +359,11 @@ document.querySelector('.info').addEventListener('click', ()=>{
 document.body.addEventListener('click', ()=>{
     document.body.requestFullscreen();
 })
+
+window.addEventListener('resize', ()=>{
+    let vh = window.innerWidth;
+    document.body.style.height = vh + 'px';
+    document.querySelectorAll('.oefening').forEach(elm=>{
+        elm.style.height = vh + 'px';
+    })
+})
