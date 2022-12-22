@@ -52,7 +52,10 @@ const unlock = (level)=>{
         }
 
         if( i == 4 ) {
-            console.log('yes')
+            document.querySelector(`.l-4`).src = './closed-chest.png';
+        }
+        
+        if( i == 5 ) {
             document.querySelector(`.l-4`).src = './chest-open.svg';
         }
     }
@@ -356,14 +359,14 @@ document.querySelector('.info').addEventListener('click', ()=>{
 
 
 
-// document.body.addEventListener('click', ()=>{
-//     document.body.requestFullscreen();
-// })
-
-window.addEventListener('resize', ()=>{
-    let vh = Math.min(document.documentElement.clientHeight, window.innerHeight || 0);
-    document.body.style.height = vh + 'px';
-    document.querySelectorAll('.oefening').forEach(elm=>{
-        elm.style.height = vh + 'px';
-    })
+document.body.addEventListener('click', ()=>{
+    document.body.requestFullscreen();
 })
+
+// window.addEventListener('resize', ()=>{
+//     let vh = Math.min(document.documentElement.clientHeight, window.innerHeight || 0);
+//     document.body.style.height = vh + 'px';
+//     document.querySelectorAll('.oefening').forEach(elm=>{
+//         elm.style.height = vh + 'px';
+//     })
+// })
