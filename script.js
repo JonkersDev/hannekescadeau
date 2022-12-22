@@ -361,7 +361,7 @@ document.body.addEventListener('click', ()=>{
 })
 
 window.addEventListener('resize', ()=>{
-    let vh = window.innerHeight;
+    let vh = Math.min(document.documentElement.clientHeight, window.innerHeight || 0);
     document.body.style.height = vh + 'px';
     document.querySelectorAll('.oefening').forEach(elm=>{
         elm.style.height = vh + 'px';
