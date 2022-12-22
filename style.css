@@ -56,6 +56,10 @@ header .nav-item .spain {
     margin-right: 8px;
     height: 22px;
 }
+.nav-item svg {
+    margin-right: 8px;
+    height: 22px;
+}
 
 .nav-item .heart {
     height: 20px;
@@ -389,7 +393,7 @@ body .oefening {
     z-index: 50;
     width: 100vw;
     height: 100vh;
-    bottom: 0;
+    top: 0;
     left: 0;
     transform: translateY(100vh);
     background-color: #141F23;

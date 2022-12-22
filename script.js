@@ -153,7 +153,7 @@ const startLesson = (level)=>{
             <h1 class="blue">Weet je zeker dat je een tip wilt kopen?</h1>
             <h3>Iedere tip kost <span>50 gems</span>.</h3>
             </div>
-            <div class="gems nav-item"><img src="./gem.svg" alt="" class="gem"><div class="gemcount">${gems}</div></div>
+            <div class="gems nav-item"><svg class="gem" width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="lingot" transform="translate(1.000000, 1.000000)" fill-rule="nonzero"><path d="M2.12,5.36 L8.595,1.452 C9.9891922,0.61047923 11.7348078,0.61047923 13.129,1.452 L19.604,5.359 C20.9201138,6.15339332 21.7243996,7.57872448 21.7240001,9.116 L21.7240001,18.782 C21.7240001,20.3189192 20.9198086,21.7437908 19.604,22.538 L13.129,26.445 C11.7348078,27.2865208 9.9891922,27.2865208 8.595,26.445 L2.12,22.538 C0.804191377,21.7437908 0,20.3189192 0,18.782 L0,9.116 C0,7.578 0.804,6.154 2.12,5.359 L2.12,5.36 Z" id="Path" stroke="#FFFFFF" stroke-width="2" fill="#1CB0F6"/><path d="M10.89,5.273 L10.89,8.438 C10.89,8.816 10.692,9.166 10.37,9.362 L7.422,11.145 C7.05578595,11.3664376 6.59336378,11.350749 6.243,11.105 L3.857,9.433 C3.55901568,9.22418286 3.38621247,8.87935269 3.39729469,8.51565441 C3.40837691,8.15195613 3.60185462,7.81828687 3.912,7.628 L9.245,4.352 C9.57820431,4.14746267 9.99593499,4.1389799 10.3371682,4.32982156 C10.6784014,4.52066323 10.8898476,4.88102607 10.89,5.272 L10.89,5.273 Z" id="Path" fill="#FFFFFF" opacity="0.793"/></g></g></svg><div class="gemcount">${gems}</div></div>
             <div class="annu">ANNULEREN</div>
             <div class="check blue">KOPEN -50 GEMS</div>
             <div class="check-back blue"></div>`;
@@ -237,7 +237,7 @@ const startLesson = (level)=>{
             <h1 class="blue">Gefeliciteerd met je verjaardag allerlieste<br><3</h1>
             <h3>Van je cadeau gaan helaas nog een aantal punten af aangezien je niet al je gems behouden hebt.<br>100% ÷ ${gems} gems x mijn gulle hart = toch nog een flinke korting op je nieuwe telefoon!<br>Maar je zult toch zelf wat bij moeten leggen om meer dan een burnerphone te krijgen...</h3>
             </div>
-            <div class="gems nav-item"><img src="./gem.svg" alt="" class="gem"><div class="gemcount">${gems}</div></div>
+            <div class="gems nav-item"><svg class="gem" width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="lingot" transform="translate(1.000000, 1.000000)" fill-rule="nonzero"><path d="M2.12,5.36 L8.595,1.452 C9.9891922,0.61047923 11.7348078,0.61047923 13.129,1.452 L19.604,5.359 C20.9201138,6.15339332 21.7243996,7.57872448 21.7240001,9.116 L21.7240001,18.782 C21.7240001,20.3189192 20.9198086,21.7437908 19.604,22.538 L13.129,26.445 C11.7348078,27.2865208 9.9891922,27.2865208 8.595,26.445 L2.12,22.538 C0.804191377,21.7437908 0,20.3189192 0,18.782 L0,9.116 C0,7.578 0.804,6.154 2.12,5.359 L2.12,5.36 Z" id="Path" stroke="#FFFFFF" stroke-width="2" fill="#1CB0F6"/><path d="M10.89,5.273 L10.89,8.438 C10.89,8.816 10.692,9.166 10.37,9.362 L7.422,11.145 C7.05578595,11.3664376 6.59336378,11.350749 6.243,11.105 L3.857,9.433 C3.55901568,9.22418286 3.38621247,8.87935269 3.39729469,8.51565441 C3.40837691,8.15195613 3.60185462,7.81828687 3.912,7.628 L9.245,4.352 C9.57820431,4.14746267 9.99593499,4.1389799 10.3371682,4.32982156 C10.6784014,4.52066323 10.8898476,4.88102607 10.89,5.272 L10.89,5.273 Z" id="Path" fill="#FFFFFF" opacity="0.793"/></g></g></svg><div class="gemcount">${gems}</div></div>
             <div class="check blue">KLAAR +1 TELEFOON</div>
             <div class="check-back blue"></div>`;
 
@@ -269,7 +269,7 @@ const startLesson = (level)=>{
     <h1 class="blue">Ohnee,<br> je hartjes zijn op! :(</h1>
     <h3>Voor <span>100 gems</span> kun je je hartjes weer vullen tot <span>5</span>.</h3>
     </div>
-    <div class="gems nav-item"><img src="./gem.svg" alt="" class="gem"><div class="gemcount">${gems}</div></div>
+    <div class="gems nav-item"><svg class="gem" width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="lingot" transform="translate(1.000000, 1.000000)" fill-rule="nonzero"><path d="M2.12,5.36 L8.595,1.452 C9.9891922,0.61047923 11.7348078,0.61047923 13.129,1.452 L19.604,5.359 C20.9201138,6.15339332 21.7243996,7.57872448 21.7240001,9.116 L21.7240001,18.782 C21.7240001,20.3189192 20.9198086,21.7437908 19.604,22.538 L13.129,26.445 C11.7348078,27.2865208 9.9891922,27.2865208 8.595,26.445 L2.12,22.538 C0.804191377,21.7437908 0,20.3189192 0,18.782 L0,9.116 C0,7.578 0.804,6.154 2.12,5.359 L2.12,5.36 Z" id="Path" stroke="#FFFFFF" stroke-width="2" fill="#1CB0F6"/><path d="M10.89,5.273 L10.89,8.438 C10.89,8.816 10.692,9.166 10.37,9.362 L7.422,11.145 C7.05578595,11.3664376 6.59336378,11.350749 6.243,11.105 L3.857,9.433 C3.55901568,9.22418286 3.38621247,8.87935269 3.39729469,8.51565441 C3.40837691,8.15195613 3.60185462,7.81828687 3.912,7.628 L9.245,4.352 C9.57820431,4.14746267 9.99593499,4.1389799 10.3371682,4.32982156 C10.6784014,4.52066323 10.8898476,4.88102607 10.89,5.272 L10.89,5.273 Z" id="Path" fill="#FFFFFF" opacity="0.793"/></g></g></svg><div class="gemcount">${gems}</div></div>
     <div class="annu">ANNULEREN</div>
     <div class="check blue">KOPEN -100 GEMS</div>
     <div class="check-back blue"></div>`;
@@ -361,7 +361,7 @@ document.body.addEventListener('click', ()=>{
 })
 
 window.addEventListener('resize', ()=>{
-    let vh = window.innerWidth;
+    let vh = window.innerHeight;
     document.body.style.height = vh + 'px';
     document.querySelectorAll('.oefening').forEach(elm=>{
         elm.style.height = vh + 'px';
