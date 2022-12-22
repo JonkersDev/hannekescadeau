@@ -379,7 +379,7 @@ body .loading-screen div {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; 
-    animation: fade-in .5s ease forwards;
+    animation: fade-in 5s ease forwards;
 }
 
 @keyframes fade-in {

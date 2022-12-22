@@ -109,7 +109,7 @@ const startLesson = (level)=>{
         document.body.append(loading);
         setTimeout(()=>{
             loading.remove();
-        }, 550)
+        }, 5500)
         console.log(level);
 
 
@@ -122,7 +122,7 @@ const startLesson = (level)=>{
                             <h3>Translate this sentence</h3>
 
                             <div class="question">
-                                <img src="./download.png" alt="" class="q${level}">
+                                <img src="./download.png" alt="" class="q${level} boy">
                                 <div class="quest q${level}">${q[level]}<span class="quest">${tips[level]}</span></div>
                             </div>
 
@@ -191,7 +191,9 @@ const startLesson = (level)=>{
                     question.querySelector('.check').classList.remove('pending')
                     question.querySelector('.check-back').classList.add('correct')
                     question.querySelector('.check').innerText = 'CONTINUE';
-        
+                    
+                    question.querySelector('.boy').src = './download3.png';
+
                     let correct = document.createElement('div');
                     correct.classList = 'answer correct';
                     correct.innerHTML = `<div class="flex"><div class="correct-icon"><img src="./checkmark.svg" alt=""></div>Great job!</div>`
@@ -216,6 +218,8 @@ const startLesson = (level)=>{
                     question.querySelector('.check').classList.remove('pending')
                     question.querySelector('.check-back').classList.add('incorrect')
                     question.querySelector('.check').innerText = 'GOT IT';
+
+                    question.querySelector('.boy').src = './download2.png';
         
                     hartjes--;
                     question.querySelector('.hearts').innerHTML = `<img src="./heart.svg" alt="" class="heart">${hartjes}`;
