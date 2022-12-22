@@ -476,7 +476,7 @@ body .oefening .hearts img {
 }
 
 body .oefening .check {
-    position: absolute;
+    position: fixed;
     bottom: 25px;
     left: 50%;
     transform: translate(-50%);
@@ -495,7 +495,7 @@ body .oefening .check {
 }
 
 body .oefening .annu {
-    position: absolute;
+    position: fixed;
     bottom: 85px;
     left: 50%;
     transform: translate(-50%);

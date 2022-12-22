@@ -356,9 +356,9 @@ document.querySelector('.info').addEventListener('click', ()=>{
 
 
 
-document.body.addEventListener('click', ()=>{
-    document.body.requestFullscreen();
-})
+// document.body.addEventListener('click', ()=>{
+//     document.body.requestFullscreen();
+// })
 
 window.addEventListener('resize', ()=>{
     let vh = Math.min(document.documentElement.clientHeight, window.innerHeight || 0);
