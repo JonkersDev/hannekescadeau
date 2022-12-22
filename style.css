@@ -399,6 +399,7 @@ body .oefening {
     background-color: #141F23;
     animation: full-height .2s ease forwards;
     overflow: hidden;
+    min-height: -webkit-fill-available;
 }
 
 .oefening .nav-item {
