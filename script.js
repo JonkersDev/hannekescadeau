@@ -187,6 +187,8 @@ const startLesson = (level)=>{
 
                 if ( question.querySelector('textarea').value.toLowerCase().includes(a[level].toLowerCase()) ) {
 
+                    playSound('correct');
+
                     question.querySelector('.check').classList.add('correct')
                     question.querySelector('.check').classList.remove('pending')
                     question.querySelector('.check-back').classList.add('correct')
@@ -213,6 +215,7 @@ const startLesson = (level)=>{
                     }
 
                 } else {
+                    playSound('wrong');
 
                     question.querySelector('.check').classList.add('incorrect')
                     question.querySelector('.check').classList.remove('pending')
@@ -234,6 +237,8 @@ const startLesson = (level)=>{
 
         
         } else if (level == 7 && question.querySelector('textarea').value.toLowerCase().includes(a[level].toLowerCase()) ){
+
+            playSound('victory');
 
             let tip = document.createElement('section');
             tip.classList = 'oefening';
@@ -311,6 +316,8 @@ const startLesson = (level)=>{
 }
 
 document.querySelector('.l-4').addEventListener('click', ()=>{
+
+    playSound('almost');
     // console.log('yes')
     if ( lvl >= 5 ){
         let question = document.createElement('section');
@@ -374,3 +381,10 @@ document.body.addEventListener('click', ()=>{
 //         elm.style.height = vh + 'px';
 //     })
 // })
+
+const playSound = (aud)=>{
+    let audio = document.createElement('audio');
+    audio.src = `./${aud}.mp3`;
+    document.body.append(audio);
+    audio.play();
+}
