@@ -240,6 +240,10 @@ const startLesson = (level)=>{
 
             playSound('victory');
 
+            setTimeout(()=>{
+                playSound('feliz');
+            }, 3000)
+
             let tip = document.createElement('section');
             tip.classList = 'oefening';
             tip.innerHTML = `
